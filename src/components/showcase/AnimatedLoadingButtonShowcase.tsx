@@ -70,8 +70,9 @@ const AnimatedLoadingButtonShowcase = () => {
         </RestartIcon>
       </Flex>
       <Paragraph>
-        Button shrinks with a spinning loader and changes to a check if success
-        or cross icon if error. Click on restart icon to reset the state.
+        Button shrinks into a spinning loader and changes to a check icon if
+        success or cross icon if error. Click on the restart button to reset the
+        state.
       </Paragraph>
       <AnimatedLoadingButton onClick={onButtonClick} status={status}>
         Click me
