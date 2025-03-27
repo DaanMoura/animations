@@ -5,8 +5,8 @@ import { HTMLMotionProps, motion } from "motion/react";
 const buttonStyle = cva({
   base: {
     outline: "none",
-    bg: "slate.900",
-    color: "slate.50",
+    bg: "zinc.100",
+    color: "zinc.900",
     height: 8,
     display: "flex",
     alignItems: "center",
@@ -47,10 +47,16 @@ const AnimatedLoadingButton = ({
         collapsed: {
           borderRadius: 100,
           width: 32,
+          paddingLeft: 0,
+          paddingRight: 0,
         },
         open: {
           borderRadius: 8,
-          width: "auto",
+          // paddingLeft: 24,
+          // paddingRight: 24,
+          // minWidth: 32,
+          width: "100%",
+          // width: "max-content",
         },
         success: {
           scale: [1.1, 1],
