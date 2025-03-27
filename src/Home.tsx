@@ -1,9 +1,9 @@
-import { Flex, styled } from "$/jsx";
+import { Flex, styled } from "@/../styled-system/jsx";
 import Aurora from "./components/Aurora/Aurora";
 import Noise from "./components/Noise/Noise";
 import Magnet from "./components/Magnet/Magnet";
 import { motion } from "motion/react";
-import AnimatedLoadingButtonShowcase from "./showcase/AnimatedLoadingButtonShowcase";
+import AnimatedLoadingButtonShowcase from "./components/showcase/AnimatedLoadingButtonShowcase";
 
 const Title = styled("h1", {
   base: {

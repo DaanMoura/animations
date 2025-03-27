@@ -1,4 +1,4 @@
-import { styled } from "$/jsx";
+import { styled } from "@/../styled-system/jsx";
 
 const Card = styled("article", {
   base: {

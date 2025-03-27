@@ -1,5 +1,5 @@
-import { cva } from "$/css";
-import { styled } from "$/jsx";
+import { cva } from "@/../styled-system/css";
+import { styled } from "@/../styled-system/jsx";
 import { Check, CircleX, LoaderCircle } from "lucide-react";
 import { HTMLMotionProps, motion } from "motion/react";
 
