@@ -1,4 +1,4 @@
-import { Flex, styled } from "@/../styled-system/jsx";
+import { Flex, styled } from "$/jsx";
 import Aurora from "./components/Aurora/Aurora";
 import Noise from "./components/Noise/Noise";
 import Magnet from "./components/Magnet/Magnet";
