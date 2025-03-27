@@ -1,6 +1,4 @@
 import { Flex, styled } from "$/jsx";
-import AnimatedLoadingButton from "./components/AnimatedLoadingButton";
-import { useState } from "react";
 import Aurora from "./components/Aurora/Aurora";
 import Noise from "./components/Noise/Noise";
 import Magnet from "./components/Magnet/Magnet";
