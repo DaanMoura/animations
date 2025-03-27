@@ -5,6 +5,7 @@ import Aurora from "./components/Aurora/Aurora";
 import Noise from "./components/Noise/Noise";
 import Magnet from "./components/Magnet/Magnet";
 import { motion } from "motion/react";
+import AnimatedLoadingButtonShowcase from "./showcase/AnimatedLoadingButtonShowcase";
 
 const Title = styled("h1", {
   base: {
@@ -39,21 +40,6 @@ const Subtitle = styled(motion.h2, {
 });
 
 const Home = () => {
-  const [status, setStatus] = useState<
-    "idle" | "loading" | "success" | "error"
-  >("idle");
-
-  const onButtonClick = () => {
-    setStatus("loading");
-    setTimeout(() => {
-      if (Math.random() < 2 / 3) {
-        setStatus("success");
-      } else {
-        setStatus("error");
-      }
-    }, 2000);
-  };
-
   return (
     <Flex
       width="100vw"
@@ -89,16 +75,15 @@ const Home = () => {
 
         <Flex
           direction="column"
-          gap={4}
-          width="250px"
+          gap={8}
+          minWidth="250px"
+          width="40vw"
+          maxWidth="400px"
           margin={16}
           zIndex={1}
           alignItems="center"
         >
-          <h1>Animated button</h1>
-          <AnimatedLoadingButton onClick={onButtonClick} status={status}>
-            Click me
-          </AnimatedLoadingButton>
+          <AnimatedLoadingButtonShowcase />
         </Flex>
       </Flex>
     </Flex>

@@ -2,6 +2,7 @@ import { cva } from "$/css";
 import { styled } from "$/jsx";
 import { Check, CircleX, LoaderCircle } from "lucide-react";
 import { HTMLMotionProps, motion } from "motion/react";
+
 const buttonStyle = cva({
   base: {
     outline: "none",
@@ -11,6 +12,7 @@ const buttonStyle = cva({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    cursor: "pointer",
   },
 });
 
@@ -52,13 +54,10 @@ const AnimatedLoadingButton = ({
         },
         open: {
           borderRadius: 8,
-          // paddingLeft: 24,
-          // paddingRight: 24,
-          // minWidth: 32,
-          width: "100%",
-          // width: "max-content",
+          width: 200,
         },
         success: {
+          pointerEvents: "none",
           scale: [1.1, 1],
           transition: {
             scale: {
@@ -68,6 +67,7 @@ const AnimatedLoadingButton = ({
           },
         },
         error: {
+          pointerEvents: "none",
           scale: [1.2, 1, 1.2, 1],
           transition: {
             scale: {
